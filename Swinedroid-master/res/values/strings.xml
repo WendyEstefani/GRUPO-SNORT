@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Swinedroid</string>
+    <string name="menu_insert">Add Server</string>
+    <string name="menu_delete">Delete Server</string>
+    <string name="menu_edit">Edit Server</string>
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit_server">Edit Server</string>
+    <string name="ok">Ok</string>
+    <string name="no_servers">No servers!</string>
+    <string name="no_servers_cont">Please use the menu to add a server to monitor.</string>
+    <string name="download_server">If you have not used Swinedroid before, please be aware that this is only the client component.\nFor Swinedroid to work properly, you will need both the client and the server components running in unison.  To download the server component, please visit http://www.inputoutput.io/files/swinedroid-server_0.25.tar.gz and follow the instructions in the README file.</string>
+    <string name="license_info">Copyright (C) 2011 - William Budington\nLicensed under GPLv3</string>
+    <string name="menu_refresh">Refresh Statistics</string>
+    <string name="search_alerts">Search Alerts</string>
+    <string name="alert_severity">Alert Severity</string>
+    <string name="search_term">Search Term</string>
+    <string name="from">From</string>
+    <string name="the_beginning">The Beginning</string>
+    <string name="to">To</string>
+    <string name="the_end">The End</string>
+    <string name="change_date">Change Date</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="alert_level_prompt">Choose an alert level</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="md5">MD5</string>
+    <string name="sha1">SHA1</string>
+    <string name="menu_search_alerts">Search Alerts</string>
+    <string name="menu_view_alerts">View Alerts</string>
+    <string name="menu_copy_alert">Copy Alert</string>
+    <string name="menu_rdns_lookup">RDNS Lookup</string>
+</resources>

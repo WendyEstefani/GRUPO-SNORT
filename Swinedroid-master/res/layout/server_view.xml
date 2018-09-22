@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip">
+    
+	<TextView
+		android:id="@+id/server_view_title"
+		android:layout_width="wrap_content"
+		android:layout_height="26dip"
+		android:textStyle="bold"
+		android:textSize="18sp"
+		android:gravity="center" />
+    <LinearLayout
+		android:id="@+id/severity_labels"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_below="@id/server_view_title">
+		<LinearLayout
+			android:id="@+id/severity_text_wrapper"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:orientation="vertical"
+			android:layout_marginRight="3dip"
+			android:layout_marginTop="26dip">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="26dip"
+				android:text="High"
+				android:gravity="center" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="26dip"
+				android:text="Medium"
+				android:gravity="center" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="26dip"
+				android:text="Low"
+				android:gravity="center" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="26dip"
+				android:text="Total"
+				android:gravity="center" />
+		</LinearLayout>
+		<View
+			android:layout_width="1dip"
+			android:layout_height="fill_parent"
+			android:background="#909090"
+			android:layout_marginTop="26dip" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+		    <LinearLayout
+				android:id="@+id/last_24"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center_horizontal"
+				android:layout_weight="1">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="24hrs"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:width="50dip" />
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="1dip"
+					android:background="#909090" />
+				<TextView
+					android:id="@+id/last_24_high"
+					android:layout_width="wrap_content"
+					android:layout_height="25dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FF0000" />
+				<TextView
+					android:id="@+id/last_24_med"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FFFF00" />
+				<TextView
+					android:id="@+id/last_24_low"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#00FF00" />
+				<TextView
+					android:id="@+id/last_24_total"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		    <LinearLayout
+				android:id="@+id/last_72"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center_horizontal"
+				android:layout_weight="1">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="72hrs"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:width="50dip" />
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="1dip"
+					android:background="#909090" />
+				<TextView
+					android:id="@+id/last_72_high"
+					android:layout_width="wrap_content"
+					android:layout_height="25dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FF0000" />
+				<TextView
+					android:id="@+id/last_72_med"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FFFF00" />
+				<TextView
+					android:id="@+id/last_72_low"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#00FF00" />
+				<TextView
+					android:id="@+id/last_72_total"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		    <LinearLayout
+				android:id="@+id/alltime"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center_horizontal"
+				android:layout_weight="1">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="Alltime"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:width="50dip" />
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="1dip"
+					android:background="#909090" />
+				<TextView
+					android:id="@+id/all_time_high"
+					android:layout_width="wrap_content"
+					android:layout_height="25dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FF0000" />
+				<TextView
+					android:id="@+id/all_time_med"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FFFF00" />
+				<TextView
+					android:id="@+id/all_time_low"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#00FF00" />
+				<TextView
+					android:id="@+id/all_time_total"
+					android:layout_width="wrap_content"
+					android:layout_height="26dip"
+					android:text="-"
+					android:gravity="center"
+					android:layout_marginLeft="2dip"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/server_view_alert_linear_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="10px"
+		android:layout_marginLeft="10px"
+		android:layout_marginRight="10px"
+		android:layout_below="@id/severity_labels" />
+</RelativeLayout>
